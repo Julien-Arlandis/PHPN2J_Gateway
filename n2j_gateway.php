@@ -168,7 +168,7 @@ NNTP::logGateway($jntp->reponse, $server, '<');
 
 if($jntp->reponse{'code'} == '200') 
 {
-	foreach($jntp->reponse{'body'}{'Jid'} as $jid)
+	foreach($jntp->reponse{'body'}{'Data.DataID'} as $dataid)
 	{		
 		$post = array();
 		$post[0] = "diffuse";
